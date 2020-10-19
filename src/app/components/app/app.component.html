@@ -1,0 +1,7 @@
+<app-search (search)="handleSearch($event)"></app-search>
+
+<ul>
+    <li *ngFor="let usuario of usuarios | search:filtroValor">
+        {{ usuario.name }}
+    </li>
+</ul>
